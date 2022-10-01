@@ -1,2 +1,284 @@
-h3 { text-align: center;
+body{
+    height: 100vh;
+    margin: 0;
+    background:rgb(145, 125, 128);
 }
+
+/* <section id="start">*/
+#start .code1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*<div class="code1">*/
+.code1 {
+    width:100%;
+}
+
+/*for bigger desktop screen*/
+@media only screen and (max-width: 1045px) {
+h1 {
+    font-size: 70px;
+}
+}
+
+h1{
+    margin:0; 
+    color: rgb(202, 180, 56);
+    font-family: sans-serif;
+    font-size: 70px;
+    margin-top: 70px;
+}
+
+/*<section id="alpha"*/
+.case:not(:last-child) {
+    padding-bottom: 50px;
+}
+
+.case:not(:first-child) {
+    padding-top: 50px;
+}
+.case {
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+/*class="info-case">*/
+.info-case {
+    flex-direction: row;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#alpha .code1:first-child{
+    margin-bottom: 35px;
+}
+.code1 {
+    width: 100%;
+}
+
+/*for bigger desktop screen*/
+@media only screen and (max-width: 1045px) {
+h2 {
+        font-size: 70px;
+}
+}
+
+h2{
+    margin:0; 
+    color: rgb(202, 180, 56);
+    font-family: sans-serif;
+    font-size: 40px;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+/*<div id ="infobox" class="info-case">*/
+#infobox {
+    align-items: flex-start;
+}
+
+/*-----------------------*/
+
+.code2 {
+    width: 25%; /*25*/
+}
+
+#infobox .code2 h3{
+    margin: 0 15px;
+}
+#infobox .code2 ul li {
+    margin: 0 15px;
+}
+
+#infobox ul{
+    padding: 0;
+}
+
+/*for bigger desktop screen*/
+@media only screen and (max-width: 1045px) {
+h3 {
+    font-size: 16px;
+}
+}
+
+h3 {
+    font-size: 17px;
+    color: white;
+    margin: 0;
+    font-family: sans-serif;
+    text-align: left;
+}
+
+/*for bigger desktop screen*/
+@media only screen and (max-width: 1045px) {
+    li{
+        line-height: 20px;
+        font-size: 20px;
+    }
+}
+
+li{
+    font-family: sans-serif;
+    color: white;
+    font-size: 19px;
+    line-height: 20px;
+}
+
+section{
+    display: block;
+}
+
+/*for bigger desktop screen, and    <div class="code1">*/
+@media only screen and (max-width: 1045px) {
+    #testwo .code1:last-child {
+        flex-wrap: wrap;
+    }
+} 
+
+#testwo .code1:last-child{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+/*for bigger desktop screen and      <div calass="code3">*/
+@media only screen and (max-width: 1045px) {
+    #testwo .code1:last-child .code3{
+        margin-bottom: 5%;
+        width: 50%;
+    } 
+}
+
+#testwo .code3 {
+    overflow-y: hidden;
+}
+
+.code3 {
+    width: 55%;
+    float: center;
+    padding: 15px;
+}
+
+.pic-hover {
+    width: 100%;
+    height: inherit;
+}
+
+img {
+    display: block;
+    width: inherit;
+}
+
+div {
+    display: block;
+}
+/*
+body{
+    background: rgb(107, 97, 97);
+}
+
+.start {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+h1 {     
+    font-size: 70px;
+    font-family: sans-serif;
+    color: rgb(255, 255, 255);
+    margin: 0;
+    margin-block-start: 0.50em;
+    margin-block-end: 0.50em;
+    font-weight: bold;
+}
+
+/*FLEX DIRECTION HERE BELLOW*/
+/*
+.info{
+    padding-bottom: 50px;
+    padding-top: 50px;
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+/*
+
+.info {
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    flex-direction:row;
+    flex-wrap: wrap;
+}
+
+*/
+
+/*--------------------------------------*/
+/*
+.image {
+    width: 25%;
+}
+
+
+h2 {
+    color: rgb(202, 180, 56);
+    font-weight: 650;
+    font-size: 29px;
+    font-family: sans-serif;
+    display: inline-block;
+    margin: 0;
+}
+
+.start {
+    margin-bottom: 35px;
+    width: 100%;
+}
+h3 {
+    color: white;
+    text-align: left;
+    font-family: sans-serif;
+    margin: 0;
+    font-size: 24px;
+    display: block;
+
+}
+
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 0.50em;
+    margin-block-end: 0.50em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 35px;
+}
+
+li {
+    font-size: 19px;
+    line-height: 22px;
+    font-family: sans-serif;
+    color: white;
+    display: list-item;
+    margin: 0 10px;
+}
+
+#infobox ul li {
+    list-style:georgian
+}
+
+#infobox .image {
+    margin: 0 15px;
+}
+*/

@@ -1,7 +1,7 @@
 body{
     height: 100vh;
     margin: 0;
-    background:rgb(145, 125, 128);
+    background:rgb(0, 0, 0);
 }
 
 /* <section id="start">*/
@@ -25,7 +25,7 @@ h1 {
 
 h1{
     margin:0; 
-    color: rgb(202, 180, 56);
+    color: rgb(202, 182, 68);
     font-family: sans-serif;
     font-size: 70px;
     margin-top: 70px;
@@ -70,7 +70,7 @@ h2 {
 
 h2{
     margin:0; 
-    color: rgb(202, 180, 56);
+    color: rgb(202, 182, 68);
     font-family: sans-serif;
     font-size: 40px;
     display: inline-block;
@@ -140,6 +140,7 @@ section{
     }
 } 
 
+/*IMAGE FLEX HERE*/
 #testwo .code1:last-child{
     align-items: center;
     display: flex;
@@ -154,14 +155,10 @@ section{
     } 
 }
 
-#testwo .code3 {
-    overflow-y: hidden;
-}
 
+/*IMAGE SPACE AND SIZE HERE*/
 .code3 {
-    width: 55%;
-    float: center;
-    padding: 15px;
+    padding: 1%;
 }
 
 .pic-hover {
@@ -177,108 +174,3 @@ img {
 div {
     display: block;
 }
-/*
-body{
-    background: rgb(107, 97, 97);
-}
-
-.start {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-}
-
-h1 {     
-    font-size: 70px;
-    font-family: sans-serif;
-    color: rgb(255, 255, 255);
-    margin: 0;
-    margin-block-start: 0.50em;
-    margin-block-end: 0.50em;
-    font-weight: bold;
-}
-
-/*FLEX DIRECTION HERE BELLOW*/
-/*
-.info{
-    padding-bottom: 50px;
-    padding-top: 50px;
-    width: 100%;
-    margin: 0 auto;
-    max-width: 1200px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-/*
-
-.info {
-    display: flex;
-    justify-content: center;
-    align-items: left;
-    flex-direction:row;
-    flex-wrap: wrap;
-}
-
-*/
-
-/*--------------------------------------*/
-/*
-.image {
-    width: 25%;
-}
-
-
-h2 {
-    color: rgb(202, 180, 56);
-    font-weight: 650;
-    font-size: 29px;
-    font-family: sans-serif;
-    display: inline-block;
-    margin: 0;
-}
-
-.start {
-    margin-bottom: 35px;
-    width: 100%;
-}
-h3 {
-    color: white;
-    text-align: left;
-    font-family: sans-serif;
-    margin: 0;
-    font-size: 24px;
-    display: block;
-
-}
-
-ul {
-    display: block;
-    list-style-type: disc;
-    margin-block-start: 0.50em;
-    margin-block-end: 0.50em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    padding-inline-start: 35px;
-}
-
-li {
-    font-size: 19px;
-    line-height: 22px;
-    font-family: sans-serif;
-    color: white;
-    display: list-item;
-    margin: 0 10px;
-}
-
-#infobox ul li {
-    list-style:georgian
-}
-
-#infobox .image {
-    margin: 0 15px;
-}
-*/

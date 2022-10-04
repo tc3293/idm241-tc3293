@@ -1,193 +1,224 @@
+/*-----------------------------------------------HTML--------------------------------------*/
+html {
+    display:block;
+}
 body{
-    height: 100vh;
+    display: block;
+    height: 150vh;
     margin: 0;
     background: radial-gradient(rgba(42, 43, 41, 0.952), rgb(0, 0, 0))
 }
-
-/* <section id="start">*/
-#start .code1 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 60px;
-}
-
-/*<div class="code1">*/
-.code1 {
-    width:100%;
-}
-
-/*for bigger desktop screen*/
-@media only screen and (max-width: 768px) {
-h1 {
-    font-size: 35px;
-}
-}
-
-h1{
-    color: rgb(202, 182, 68);
-    font-family: sans-serif;
-    font-size: 40px;
-    margin-top: 80px;
-    text-align: center;
-}
-
-/*<section id="alpha"*/
-.case:not(:last-child) {
-    padding-bottom: 50px;
-}
-
-.case:not(:first-child) {
-    padding-top: 50px;
-}
-.case {
-    max-width: 1200px;
-    margin: 0 auto;
-    width: 100%;
-}
-
-/*class="info-case">*/
-.info-case {
-    flex-direction: row;
-    flex-wrap: wrap;
-    display: flex;
-    justify-content: space-around
-}
-
-@media only screen and (max-width: 768px) {
-.info-case {
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-}    
-}
-
-
-
-#alpha .code1:first-child{
-    margin-bottom: 35px;
-}
-.code1 {
-    width: 100%;
-}
-
-/*for bigger desktop screen*/
-@media only screen and (max-width: 768px) {
-h2 {
-        font-size: 35px;
-}
-}
-
-h2{
-    margin:0; 
-    color: rgb(202, 182, 68);
-    font-family: sans-serif;
-    font-size: 45px;
-    display: inline-block;
-    margin-top: 10px;
-    text-align: center;
-}
-
-/*<div id ="infobox" class="info-case">*/
-/*#infobox {
-    align-items: flex-start;
-}
-
-/*-----------------------*/
-
-.code2 {
-    width: 25%; /*25*/
-}
-
-#infobox .code2 h3{
-    margin: 0 15px;
-}
-#infobox .code2 ul li {
-    margin: 0 15px;
-}
-
-#infobox ul{
-    padding: 0;
-}
-
-/*for bigger desktop screen*/
-@media only screen and (max-width: 768px) {
-h3 {
-    font-size: 16px;
-}
-}
-
-h3 {
-    font-size: 17px;
-    color: white;
-    margin: 0;
-    font-family: sans-serif;
-    text-align: left;
-}
-
-/*COME BACK FIX THIS COLUM ISSUE !!!!!!!!!!!!!!!!!!!!!!*/
-@media only screen and (max-width: 768px) {
-    li{
-        list-style: none;
-        font-size: 20px;
-        flex-wrap: wrap;
-    }
-}
-
-li{
-    font-family: sans-serif;
-    color: white;
-    font-size: 19px;
-    line-height: 20px;
-}
-
-section{
+main { /*top, right, bottom, left*/
+    padding: 50px 0 50px;
     display: block;
 }
 
-/*for bigger desktop screen, and    <div class="code1">*/
-@media only screen and (max-width: 768px) {
-    #testwo .code1:last-child {
-        flex-wrap: wrap;
-    }
-} 
-
-/*IMAGE FLEX HERE and CENTER*/ /*!!!! IMPORTANT OMG I DID IT*/
-#testwo .code1:last-child{
-    align-items: center;
-    display: flex;
-    justify-content: space-between;
-    justify-content: center;
-    margin-top: 25px;
-}
-
-/*for bigger desktop screen and      <div calass="code3">*/
-@media only screen and (max-width: 768px) {
-    #testwo .code1:last-child .code3{
-        margin-bottom: 5%;
-        width: 50%;
-    } 
-}
-
-
-/*IMAGE SPACE AND SIZE HERE*/
-.code3 {
-    padding: 1%;
-}
-
-.pic-hover {
-    max-width: 100%;
-    height: inherit;
-}
-
-img {
+section {
     display: block;
-    width: inherit;
-    max-width: 100%;
 }
 
 div {
     display: block;
 }
+/*---------------------------------------------------------------------------------------*/
+
+
+
+/*-----------------------------Microinteraction title------------------------------------*/
+.script-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+#start {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*---------------------------------------------------------------------------------------*/
+
+
+
+/*---------------------------------------H1----------------------------------------------*/
+h1 {
+    font-size: 50px;
+    color: rgb(202, 182, 68);
+    text-shadow: 3px 3px 15px rgb(128, 117, 86);
+    font-family:sans-serif;
+    margin: 5px;    /*come back fix this*/
+    font-weight: 770;
+}
+/*---------------------------------------------------------------------------------------*/
+
+
+
+/*-----------------------------------------H2--------------------------------------------*/
+h2 {
+    font-size: 33px;
+    font-family: sans-serif;
+    color: rgb(199, 191, 147);
+    margin: 25px;
+    display: inline-block;
+    font-weight: 650;
+}
+
+
+/*---------------------------------------------------------------------------------------*/
+
+
+/*--------------------------------------alpha--------------------------------------------*/
+.container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+.container-case {
+    display: flex;
+    justify-content: space-evenly; /*center*/
+    flex-wrap: wrap;
+    column-gap: 13%;
+}
+
+
+#alpha .script-1 {
+    margin-bottom: 30px;
+}
+/*---------------------------------------------------------------------------------------*/
+
+
+
+/*-----------------------------------------box-------------------------------------------*/
+#box {
+    align-items: flex-start;
+}
+/*---------------------------------------------------------------------------------------*/
+
+
+/*----------------------------------------script-2 or h3---------------------------------*/
+
+.script-2 {
+    width: 25%;
+
+}
+
+h3{
+    margin: 0 15px;
+    font-family: sans-serif;
+    color: white;
+    font-size: 24px;
+    text-align:left;
+}
+/*---------------------------------------------------------------------------------------*/
+
+
+/*--------------------*-----------------Ul and li----------------------------------------*/
+ul {
+    padding: 0;
+}
+
+li {
+    color: white;
+    font-family: sans-serif;
+    font-size: 16px;
+    line-height: 30px;
+    margin: 0 2px;
+    list-style: circle;
+}
+/*---------------------------------------------------------------------------------------*/
+
+/*--------------------------MOBILE SCREEN for paragraphy/title---------------------------*/
+
+/*  color: rgb(202, 182, 68);*/
+@media only screen and (max-width: 768px) {
+main {
+    margin: 0 30px
+}
+}
+
+@media only screen and (max-width: 768px) {
+h1 {
+    font-size: 25px;
+}
+}
+
+@media only screen and (max-width: 768px) {
+h2 {
+    font-size: 25px;
+    font-style: italic;
+    margin: 0;
+}
+}
+
+@media only screen and (max-width: 768px) {
+.script-2 {
+    font-size: 18px;
+    width: 100%;
+    margin: 17px;
+    /*come back fix this*/
+}
+}
+
+@media only screen and (max-width: 768px) {
+ul, li {
+    font-size: 20px;
+}
+}
+/*---------------------------------------------------------------------------------------*/
+
+
+
+/*--------------------------------------example------------------------------------------*/
+.container-case {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 25px;
+}
+
+#example .script-1 {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    column-gap: 5%;
+    flex-wrap: wrap;
+
+}
+
+picture {
+    max-width: 100%;
+    height: inherit;
+}
+
+/*image fit content size in small box*/
+img {
+  align-items: center;
+  width: 22rem;
+  height: 30rem;
+  object-fit: cover;
+  object-position: bottom;
+  padding-bottom: 2rem;
+}
+/*---------------------------------------------------------------------------------------*/
+
+
+
+/*--------------------------MOBILE SCREEN for image--------------------------------------*/
+@media only screen and (max-width: 768px) {
+    .picture {
+        margin-top: 15%;
+    }
+    }
+
+@media only screen and (max-width: 768px) {
+    .script-1 {
+        margin-top: 25px;
+        margin-bottom: 0;
+    }
+    }
+
+/*---------------------------------------------------------------------------------------*/

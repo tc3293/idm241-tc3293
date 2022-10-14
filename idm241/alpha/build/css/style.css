@@ -289,9 +289,16 @@ ul, li {
     height: 60px;
     border-radius: 50%;
     text-align: center;
-
 }
 
+/*-----------------BETA HERE------------------*/
+/*.fa-solid {
+    transition: transform 0.5s ease 0s;
+}
+.fa-solid:hover {
+    transform: rotate(180deg);
+}
+/*
 /*------------------------------Image Transform zoom in and hover-------------------------------*/
 .work:hover img {
     transform: scale(1.3);

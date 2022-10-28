@@ -145,7 +145,7 @@ li {
 /*  color: rgb(202, 182, 68);*/
 @media only screen and (max-width: 768px) {
 main {
-    margin: 0 30px
+    margin: 5px
 }
 }
 
@@ -213,6 +213,7 @@ ul, li {
     transition: 0.7s;
     max-height: 477px;
     margin-top: 5px;
+    margin-bottom: 5px
    
 }
 /*---------------------------------------------------------------------------------------*/
@@ -387,13 +388,13 @@ img {
 /*--------------2nd Microinteraction start here and growing light design----------------*/
 .work-list {
     position: relative;
-    width: 398px;
-    height:487px;
+    max-width: 398px;
+    min-height:482px;
     background: linear-gradient(#FEE851);
-    border-radius: 8px;
     overflow: hidden;
     margin-left: auto;
     margin-right:auto;
+    border-radius: 3%;
 }
 .work-list::before {
     content: '';
@@ -418,6 +419,7 @@ img {
     transform-origin: bottom right;
     animation: animate 4s linear infinite;
     animation-delay: -2s;
+    
 }
 @keyframes animate
 {
@@ -432,25 +434,26 @@ img {
 }
 /*---------------------------------------------------------------------------------------*/
 
-/*-------------------------2nd microinteraction mobile size------------------------------*/
+/*-----------------2nd GLOW  HERE microinteraction mobile size---------------------------*/
 @media only screen and (max-width: 768px) {
     .work-list {
         width: 100%;
-        margin-top: 5px;
-        height: 100%;
+        margin-top: 0px;
+        min-height:0;
+
     }
     }
 
 @media only screen and (max-width: 768px) {
     .work-list2{
         width: 100%;
-        margin-bottom: 5px;
+        margin-bottom: 0px;
     }
     }
 @media only screen and (max-width: 768px) {
     .work-list:before {
         width: 100%;
-        margin-top: 5px;
+        margin-top: 0px;
         height: 100%;
         top: -50%;
         left: -50%;
@@ -460,9 +463,10 @@ img {
 @media only screen and (max-width: 768px) {
     .work-list2:before{
         width: 100%;
-        margin-bottom: 5px;
+        margin-bottom: 0px;
         top: -70%;
         left: -50%;
+    
     }
     }
 

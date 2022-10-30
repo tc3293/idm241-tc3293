@@ -280,28 +280,131 @@ ul, li {
     width: 100%;
     margin-bottom: 0;
 }
-/*----------------------------------HREF OR CIRCLE ICON--------------------------------*/
+/*----------------------------------HREF OR CIRCLE ICON--------------------------------
+--------------------------Button Hover 3rd micro interaction here--------------------------------*/
+/*
 .layer a{
     margin-top: 10px;
     color: #a79449;
     text-decoration: none;
     font-size: 18px;
     line-height: 60px;
-    background: #fff;
+    background: linear-gradient(#e4bb1a, #000000, #e4bb1a);
     width: 60px;
     height: 60px;
     border-radius: 50%;
     text-align: center;
 }
 
-/*-----------------BETA HERE------------------*/
-/*.fa-solid {
+^^^^ A HREF LINK JUNCHEN DISABLE */
+
+.texter {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 10px;
+}
+
+.glow {
+    position: relative;
+    margin: 0 50px;
+    background: linear-gradient(#ebe485, hsl(54, 74%, 60%), #dfba1a);
+    transform: scale(1.0);
+    transition: .2s;
+}
+
+.circle {
+    height: 73px;
+    width: 73px;
+    border-radius: 100%;
+}
+.glow button, .glow span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.glow button {
+    color: rgb(255, 255, 255);
+    background: linear-gradient(rgba(42, 43, 41, 0.952), #535351, rgba(42, 43, 41, 0.952));
+    outline: none;
+    border: 0px;
+    z-index: 8;
+    font-size: 20px;
+    cursor: pointer;
+}
+.circle button {
+    height: 63px;
+    width: 63px; 
+    border-radius: 100%;
+}
+.glow span{
+    height: 100%;
+    width: 100%;
+    background: inherit;
+}
+.circle span {
+    border-radius: 100%;
+}
+
+.glow:hover span:nth-child(1){
+    filter: blur(7px);
+    transition: .3s;
+
+}
+.glow:hover span:nth-child(2){
+    filter: blur(14px);
+    transition: .3s;
+}
+.glow:hover{
+    animation: rotate 1.2s linear infinite;
+    transform: scale(0.8);
+    transition: .3s;
+    
+}
+@keyframes rotate {
+    0%{
+        filter: hue-rotate(0deg)
+    }    
+    100%{
+        filter: hue-rotate(400deg);
+    }
+}
+.fa-solid:hover{
+    color: rgb(202, 182, 68);
+}
+
+
+/*
+.outer button {
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+    background: linear-gradient(#e4bb1a, hsl(0, 0%, 0%), #e4bb1a);
+    border: 0px;
+
+
+}
+
+.outer span {
+    height: 100%;
+    width: 100%;
+    background: inherit;
+}
+
+
+
+
+/*-----------------BETA icon animation here------------------*/
+/*
+.fa-solid {
     transition: transform 0.5s ease 0s;
 }
 .fa-solid:hover {
     transform: rotate(180deg);
 }
-/*
+
 /*------------------------------Image Transform zoom in and hover-------------------------------*/
 .work:hover img {
     transform: scale(1.3);
@@ -472,3 +575,5 @@ img {
 
 /*---------------------------------------------------------------------------------------*/
 
+
+/*----------------------Button Hover 3rd micro interaction here--------------------------*/

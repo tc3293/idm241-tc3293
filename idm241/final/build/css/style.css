@@ -1,0 +1,712 @@
+/*-----------------------------------------------HTML--------------------------------------*/
+html {
+    display:block;
+}
+body{
+    display: block;
+    height: 150vh;
+    margin: 0;
+    background: radial-gradient(rgba(42, 43, 41, 0.952), rgb(0, 0, 0));
+}
+main { /*top, right, bottom, left*/
+    padding: 50px 0 50px;
+    display: block;
+}
+
+section {
+    display: block;
+}
+
+div {
+    display: block;
+}
+
+a {
+    cursor: pointer;
+    color: rgb(230, 198, 18);
+    text-shadow: 3px 3px 15px rgb(128, 117, 86);
+    text-decoration: rgb(199, 191, 147) wavy underline;
+}
+
+a:hover {
+    color: rgb(199, 191, 147);
+}
+/*---------------------------------------------------------------------------------------*/
+
+
+
+/*-----------------------------Microinteraction title------------------------------------*/
+.script-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+#start {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*---------------------------------------------------------------------------------------*/
+
+
+
+/*---------------------------------------H1----------------------------------------------*/
+h1 {
+    font-size: 50px;
+    color: rgb(202, 182, 68);
+    text-shadow: 3px 3px 15px rgb(128, 117, 86);
+    font-family:sans-serif;
+    margin: 5px;    /*come back fix this*/
+    font-weight: 770;
+}
+/*---------------------------------------------------------------------------------------*/
+
+
+
+/*-----------------------------------------H2--------------------------------------------*/
+h2 {
+    font-size: 33px;
+    font-family: sans-serif;
+    color: rgb(199, 191, 147);
+    margin: 25px;
+    display: inline-block;
+    font-weight: 650;
+}
+
+
+/*---------------------------------------------------------------------------------------*/
+
+
+/*--------------------------------------alpha--------------------------------------------*/
+.container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+.container-case {
+    display: flex;
+    justify-content: space-evenly; /*center*/
+    flex-wrap: wrap;
+    column-gap: 13%;
+}
+
+
+#alpha .script-1 {
+    margin-bottom: 30px;
+}
+/*---------------------------------------------------------------------------------------*/
+
+
+
+/*-----------------------------------------box-------------------------------------------*/
+#box {
+    align-items: flex-start;
+}
+/*---------------------------------------------------------------------------------------*/
+
+
+/*----------------------------------------script-2 or h3---------------------------------*/
+
+.script-2 {
+    width: 25%;
+
+}
+
+h3{
+    margin: 0 15px;
+    font-family: sans-serif;
+    color: white;
+    font-size: 24px;
+    text-align:left;
+}
+/*---------------------------------------------------------------------------------------*/
+
+
+/*--------------------*-----------------Ul and li----------------------------------------*/
+ul {
+    padding: 0;
+}
+
+li {
+    color: white;
+    font-family: sans-serif;
+    font-size: 16px;
+    line-height: 30px;
+    margin: 0 2px;
+    list-style: circle;
+}
+/*---------------------------------------------------------------------------------------*/
+
+/*--------------------------MOBILE SCREEN for paragraphy/title---------------------------*/
+
+/*  color: rgb(202, 182, 68);*/
+@media only screen and (max-width: 768px) {
+main {
+    margin: 5px
+}
+}
+
+@media only screen and (max-width: 768px) {
+h1 {
+    font-size: 25px;
+}
+}
+
+@media only screen and (max-width: 768px) {
+h2 {
+    font-size: 25px;
+    font-style: italic;
+    margin: 0;
+}
+}
+
+@media only screen and (max-width: 768px) {
+.script-2 {
+    font-size: 18px;
+    width: 100%;
+    margin: 17px;
+    /*come back fix this*/
+}
+}
+
+@media only screen and (max-width: 768px) {
+ul, li {
+    font-size: 20px;
+}
+}
+/*---------------------------------------------------------------------------------------*/
+
+/*----------------------------------------Image edit----------------------------------------*/
+
+#portfolio { /*note: the outside box contain inside work img for center*/
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    width: 100%;  /*IMAGE SIZE OUTSIDE DIV FOR MOBILE*/
+    padding: 0;
+    margin-bottom: 5%;
+}
+.work-list{
+    display: grid;
+}
+
+.work{
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+}
+
+/*--------------2nd microinteraction edit growing size image-----------------------------*/
+.work img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    border-radius: 10px;
+    transition: 0.7s;
+    max-height: 477px;
+    margin-top: 5px;
+    margin-bottom: 5px
+   
+}
+/*---------------------------------------------------------------------------------------*/
+
+/*---------------------------------text in center image----------------------------------*/
+
+.layer {
+    background: linear-gradient(rgba(0,0,0,0.6),#FEE851);
+    border-radius: 10px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+    max-width:480px;
+    margin: auto;
+    height: 0;
+    transition: .6s ease;
+    background-size: cover;
+}
+
+.texter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    overflow: hidden;
+    border-radius: 15px;
+    margin-top: 35%;  /*Make text center image Genshin ZODIAC and P*/
+}
+
+.texter h3 {
+    text-align: center;
+    overflow: hidden;
+    border-radius: 10px;
+    padding-top: 20px;
+    text-shadow: 3px 3px black;
+}
+
+.texter p {
+    font-size: 26px;
+    color: white;
+    text-shadow: 2px 2px black;
+}
+    
+    /*width: 40%;
+    height: 0;
+    background: linear-gradient(rgba(0,0,0,0.6),#FEE851);
+    border-radius: 10px;
+    position: absolute;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    transition: 0.4s;*/
+    
+
+/*---------------------------------------text font-------------------------------------*/
+.texter h3{
+    width: 100%;
+    margin-bottom: 0;
+}
+/*----------------------------------HREF OR CIRCLE ICON--------------------------------
+--------------------------Button Hover 3rd micro interaction here--------------------------------*/
+/*
+.layer a{
+    margin-top: 10px;
+    color: #a79449;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 60px;
+    background: linear-gradient(#e4bb1a, #000000, #e4bb1a);
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+}
+
+^^^^ A HREF LINK JUNCHEN DISABLE */
+
+.texter {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 10px;
+}
+
+.glow {
+    position: relative;
+    margin: 0 50px;
+    background: linear-gradient(#ebe485, hsl(54, 74%, 60%), #dfba1a);
+    transform: scale(1.0);
+    transition: .2s;
+}
+
+.circle {
+    height: 73px;
+    width: 73px;
+    border-radius: 100%;
+}
+.glow i, .glow span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.glow i {
+    color: rgb(255, 255, 255);
+    background: linear-gradient(rgba(42, 43, 41, 0.952), #535351, rgba(42, 43, 41, 0.952));
+    outline: none;
+    border: 0px;
+    z-index: 8;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+
+.circle i {  /*EDIT THE FONT AWESOME ICON HERE SHAPE IMPORTANT.*/
+    border-radius: 100%;
+    padding: 30%;
+}
+.glow span{
+    height: 100%;
+    width: 100%;
+    background: inherit;
+}
+.circle span {
+    border-radius: 100%;
+}
+
+.glow:hover span:nth-child(1){
+    filter: blur(7px);
+    transition: .3s;
+
+}
+.glow:hover span:nth-child(2){
+    filter: blur(14px);
+    transition: .3s;
+}
+.glow:hover{
+    animation: rotate 1.2s linear infinite;
+    transform: scale(0.8);
+    transition: .3s;
+    
+}
+@keyframes rotate {
+    0%{
+        filter: hue-rotate(0deg)
+    }    
+    100%{
+        filter: hue-rotate(400deg);
+    }
+}
+.fa-solid:hover{
+    color: rgb(202, 182, 68);
+}
+
+
+/*
+.outer button {
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+    background: linear-gradient(#e4bb1a, hsl(0, 0%, 0%), #e4bb1a);
+    border: 0px;
+
+
+}
+
+.outer span {
+    height: 100%;
+    width: 100%;
+    background: inherit;
+}
+
+
+
+
+/*-----------------BETA icon animation here------------------*/
+/*
+.fa-solid {
+    transition: transform 0.5s ease 0s;
+}
+.fa-solid:hover {
+    transform: rotate(180deg);
+}
+
+/*------------------------------Image Transform zoom in and hover-------------------------------*/
+.work:hover img {
+    transform: scale(1.3);
+}
+.work:hover .layer{
+    height: 100%;
+    width: 100%;
+    margin: auto;
+}
+
+
+/*--------------------------------------example-------------------------------------
+.container-case {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 25px;
+}
+
+#example .script-1 {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    column-gap: 5%;
+    flex-wrap: wrap;
+
+}
+
+picture {
+    max-width: 100%;
+    height: inherit;
+}
+
+*******image fit content size in small box*******
+img {
+  align-items: center;
+  width: 22rem;
+  height: 30rem;
+  object-fit: cover;
+  object-position: bottom;
+  padding-bottom: 2rem;
+}
+-----------------------------------------------------------------*/
+
+
+
+/*--------------------------MOBILE SCREEN for image--------------------------------------*/
+@media only screen and (max-width: 768px) {
+    .layer {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    }
+    }
+
+@media only screen and (max-width: 768px) {
+    .work img {
+    width: 96%;
+    margin-top: 5px;
+    }
+    }
+
+@media only screen and (max-width: 768px) {
+    .texter p {
+    font-size: 16px;
+    font-weight: 600;
+    width: 90%;
+    }
+    }
+
+
+@media only screen and (max-width: 768px) {
+    .script-1 {
+        margin-top: 25px;
+        margin-bottom: 0;
+    }
+    }
+
+/*---------------------------------------------------------------------------------------*/
+
+/*--------------2nd Microinteraction start here and growing light design----------------*/
+.work-list {
+    position: relative;
+    max-width: 398px;
+    min-height:482px;
+    background: linear-gradient(#FEE851);
+    overflow: hidden;
+    margin-left: auto;
+    margin-right:auto;
+    border-radius: 4%;   /*----------------BORDER RADIUS THE GLOWING CIRCLE------------------*/
+}
+.work-list::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 398px;
+    height:489px;
+    background: linear-gradient(0deg, transparent,#FEE851,#FEE851);
+    transform-origin: bottom right;
+    animation: animate 4s linear infinite;
+}
+.work-list2::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 402px;
+    height:489px;
+    background: linear-gradient(0deg, transparent,#FEE851,
+    #FEE851);
+    transform-origin: bottom right;
+    animation: animate 4s linear infinite;
+    animation-delay: -2s;
+    
+}
+@keyframes animate
+{
+    0%
+    {
+        transform: rotate(0deg);
+    }
+    100%
+    {
+        transform: rotate(360deg);
+    }
+}
+/*---------------------------------------------------------------------------------------*/
+
+/*-----------------2nd GLOW  HERE microinteraction mobile size---------------------------*/
+@media only screen and (max-width: 768px) {
+    .work-list {
+        width: 100%;
+        margin-top: 0px;
+        min-height:0;
+        border-radius: 4%;  
+    }
+    }
+
+@media only screen and (max-width: 768px) {
+    .work-list2{
+        width: 100%;
+        margin-bottom: 0px;
+    }
+    }
+@media only screen and (max-width: 768px) {
+    .work-list:before {
+        width: 100%;
+        margin-top: 0px;
+        height: 100%;
+        top: -50%;
+        left: -50%;
+    }
+    }
+
+@media only screen and (max-width: 768px) {
+    .work-list2:before{
+        width: 100%;
+        margin-bottom: 0px;
+        top: -70%;
+        left: -50%;
+    
+    }
+    }
+
+/*---------------------------------------------------------------------------------------*/
+
+
+/*----------------------Button Hover 3rd micro interaction here--------------------------*/
+
+.confirmBody{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 40%;
+    overflow: hidden;
+    z-index: 8;
+}
+
+
+.confirmContainer{
+    position: relative;
+    max-width: 300px;
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+    position: relative;
+    top: -100px;
+    transform: translateY(-50%);
+    transition: all ease-in-out 0.3s;
+    z-index: 2;
+}
+
+.confirmInner{
+    height: auto;
+    width: auto;
+    border-radius: 10px;
+    background-color: rgb(141, 42, 42);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    overflow: hidden;
+}
+
+.cfTop{
+    height: 40px;
+    width: 100%;
+    margin-bottom: 10px;
+    user-select: none;
+    background-color: rgb(24, 180, 146);
+}
+
+.cfTitle{
+    text-align: center;
+    line-height: 40px;
+    font-size: 1.3em;
+    margin: 0;
+}
+
+.cfClose{
+    position: absolute;
+    margin-left: 10px;
+    margin-top: 7.5px;
+}
+
+.cfCancel{
+    background-color: rgb(180, 39, 39);
+}
+
+.cfYes{
+    background-color: cornflowerblue;
+    color: white;
+}
+
+
+.cfContent{
+    height: auto;
+    width: 90%;
+    text-align: center;
+    margin: 0 auto;
+    user-select: none;
+}
+
+
+.cfBottom{
+    margin-top: 10px;
+    height: 40px;
+    width: 100%;
+    user-select: none;
+    background-color: rgb(136, 34, 167);
+}
+
+.cfBottom::before{
+    content: "";
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    background-color: gainsboro;
+}
+
+.cfTop::after{
+    content: "";
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    background-color: gainsboro;
+}
+
+.cfSubmitContainer{
+    height: auto;
+    width: auto;
+    text-align:center;
+    overflow: auto;
+    float: right;
+}
+
+
+.cfSubmit_bt{
+    text-align: center;
+    border: none;
+    height: 30px;
+    width: auto;
+    line-height: 30px;
+    padding: 0 10px 0 10px;
+    margin-right: 5px;
+    margin-top: 5px;
+    font-size: 1em;
+    display: inline-block;
+    border-radius: 5px;
+}
+
+.cfCancel:active, .cfCancel:hover{
+    background-color: #f0f0f0;
+    border: none;
+    outline: none;
+}
+
+.cfYes:active, .cfYes:hover{
+    background-color: #76a7ff;
+    border: none;
+    outline: none;
+}
+

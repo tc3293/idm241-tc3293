@@ -359,7 +359,7 @@ ul, li {
     transition: .3s;
 }
 .glow:hover{
-    animation: rotate 1.2s linear infinite;
+    animation: rotate 1.2s linear infinite;      /*RAINBOW ANIMATION HERE*/
     transform: scale(0.8);
     transition: .3s;
     
@@ -606,9 +606,10 @@ img {
     height: auto;
     width: auto;
     border-radius: 10px;
-    background-color: rgb(141, 42, 42);
+    background: radial-gradient(rgba(64, 65, 63, 52), rgb(22, 22, 22));  /*Second line  box color and could expand all color*/
     box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
     overflow: hidden;
+    color: white;
 }
 
 .cfTop{
@@ -616,13 +617,15 @@ img {
     width: 100%;
     margin-bottom: 10px;
     user-select: none;
-    background-color: rgb(24, 180, 146);
+    /*background: radial-gradient(rgba(64, 65, 63, 52), rgb(0, 0, 0)); */   /*First top color*/
+    color: white;
+    text-shadow: 3px 3px 50px white; /*#FEE851*/
 }
 
 .cfTitle{
     text-align: center;
     line-height: 40px;
-    font-size: 1.3em;
+    font-size: 1.2em;
     margin: 0;
 }
 
@@ -633,12 +636,21 @@ img {
 }
 
 .cfCancel{
-    background-color: rgb(180, 39, 39);
+    background: linear-gradient(to left, #eb2222, rgb(233, 77, 77));    /*No button color*/
+    padding-left: 5px;
+    padding-right: 5px;
+    color: rgb(41, 38, 38);
+    font-weight: 800;
 }
 
 .cfYes{
-    background-color: cornflowerblue;
-    color: white;
+    background: linear-gradient(to left, #237e23, rgb(111, 212, 98));    /*Yes button color*/
+    color: rgb(41, 38, 38);
+    font-weight: 800;
+    padding-left: 15px;
+    padding-right: 15px;
+    animation: rotate 1s linear infinite;      /*RAINBOW ANIMATION HERE*/
+
 }
 
 
@@ -648,15 +660,16 @@ img {
     text-align: center;
     margin: 0 auto;
     user-select: none;
+    font-size: 18px;
 }
 
 
 .cfBottom{
     margin-top: 10px;
-    height: 40px;
+    height: 50px;
     width: 100%;
     user-select: none;
-    background-color: rgb(136, 34, 167);
+    /* background-color: rgb(136, 34, 167); */ /*Third line box color*/
 }
 
 .cfBottom::before{
@@ -664,33 +677,33 @@ img {
     position: absolute;
     height: 1px;
     width: 100%;
-    background-color: gainsboro;
+    /*background-color: gainsboro; */ /*this is LINE DASH*/
 }
 
 .cfTop::after{
     content: "";
     position: absolute;
-    height: 1px;
+    height: 2px;
     width: 100%;
-    background-color: gainsboro;
+    background-color: #FEE851;  /*this is LINE DASH*/
 }
 
 .cfSubmitContainer{
     height: auto;
     width: auto;
     text-align:center;
-    overflow: auto;
-    float: right;
+    overflow: hidden;
+    float: right; /*----------------- make this yes and cancel button go on right*--------*/
 }
 
 
-.cfSubmit_bt{
+.cfSubmit_bt {
     text-align: center;
     border: none;
     height: 30px;
     width: auto;
     line-height: 30px;
-    padding: 0 10px 0 10px;
+   /* padding: 0 10px 0 10px; */
     margin-right: 5px;
     margin-top: 5px;
     font-size: 1em;
@@ -698,15 +711,25 @@ img {
     border-radius: 5px;
 }
 
+
 .cfCancel:active, .cfCancel:hover{
     background-color: #f0f0f0;
+    animation: shake  0.3s infinite ease-in-out alternate; 
     border: none;
     outline: none;
+    overflow: hidden;
+    cursor: pointer;
 }
 
 .cfYes:active, .cfYes:hover{
-    background-color: #76a7ff;
+    animation: shake 0.3s infinite ease-in-out alternate; 
     border: none;
     outline: none;
+    overflow: hidden;
+    cursor: pointer;
 }
 
+@keyframes shake {
+    from { transform: scale(1); }
+    to { transform: scale(0.8); }
+  }

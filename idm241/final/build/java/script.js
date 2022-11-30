@@ -96,7 +96,7 @@ function confirmThis(title,content,button1Text, button2Text, yesCallback,noCallb
 
 function runFinal(){
   var link = "https://junchenn.com/zodiac/index.html"; 
- confirmThis("You're leaving this site", "Are you sure you want to leave this site?","No", "Yes",function(){
+ confirmThis("Visit Website", "Are you sure you want to leave this site?","Cancel", "Yes",function(){
     //Continue code here
    window.open(link, '_blank');
 

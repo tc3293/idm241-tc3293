@@ -641,6 +641,7 @@ img {
     padding-right: 5px;
     color: rgb(41, 38, 38);
     font-weight: 800;
+    transition: all 0.5s ease-in-out;
 }
 
 .cfYes{
@@ -650,7 +651,7 @@ img {
     padding-left: 15px;
     padding-right: 15px;
     animation: rotate 1s linear infinite;      /*RAINBOW ANIMATION HERE*/
-
+    transition: all 0.5s ease-in-out;
 }
 
 
@@ -719,6 +720,7 @@ img {
     outline: none;
     overflow: hidden;
     cursor: pointer;
+    transition: all 0.5s ease-in-out;
 }
 
 .cfYes:active, .cfYes:hover{
@@ -727,6 +729,7 @@ img {
     outline: none;
     overflow: hidden;
     cursor: pointer;
+    transition: all 0.5s ease-in-out;
 }
 
 @keyframes shake {

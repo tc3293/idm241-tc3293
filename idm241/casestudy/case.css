@@ -1,0 +1,144 @@
+html {
+    display:block;
+}
+body{
+    display: block;
+    height: 150vh;
+    margin: 0;
+    background: radial-gradient(rgba(42, 43, 41, 0.952), rgb(0, 0, 0));
+}
+main { /*top, right, bottom, left*/
+    padding: 50px 0 50px;
+    display: block;
+}
+
+section {
+    display: block;
+}
+
+div {
+    display: block;
+}
+
+a {
+    cursor: pointer;
+    color: rgb(230, 198, 18);
+    text-shadow: 3px 3px 15px rgb(128, 117, 86);
+    text-decoration: rgb(199, 191, 147) wavy underline;
+}
+
+a:hover {
+    color: rgb(199, 191, 147);
+}
+
+/*-----------------------------Microinteraction title------------------------------------*/
+.script-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+#start {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*---------------------------------------------------------------------------------------*/
+
+
+
+/*---------------------------------------H1----------------------------------------------*/
+h1 {
+    font-size: 50px;
+    color: rgb(202, 182, 68);
+    text-shadow: 3px 3px 15px rgb(128, 117, 86);
+    font-family:sans-serif;
+    margin: 5px;    /*come back fix this*/
+    font-weight: 770;
+}
+/*---------------------------------------------------------------------------------------*/
+
+
+
+/*-----------------------------------------H2--------------------------------------------*/
+h2 {
+    font-size: 33px;
+    font-family: sans-serif;
+    color: rgb(199, 191, 147);
+    margin: 25px;
+    display: inline-block;
+    font-weight: 650;
+}
+
+
+/*---------------------------------------------------------------------------------------*/
+/*--------------------------MOBILE SCREEN for paragraphy/title---------------------------*/
+
+/*  color: rgb(202, 182, 68);*/
+@media only screen and (max-width: 768px) {
+main {
+    margin: 5px
+}
+}
+
+@media only screen and (max-width: 768px) {
+h1 {
+    font-size: 25px;
+}
+}
+
+@media only screen and (max-width: 768px) {
+h2 {
+    font-size: 25px;
+    font-style: italic;
+    margin: 0;
+}
+}
+
+/*--------------------------MOBILE SCREEN for image--------------------------------------*/
+@media only screen and (max-width: 768px) {
+    .casestudy  {
+    align-items: center;
+    height: 30rem;
+    object-fit: cover;
+    object-position: bottom;
+    }
+    }
+
+@media only screen and (max-width: 768px) {
+    .texter p {
+    font-size: 16px;
+    font-weight: 600;
+    width: 90%;
+    }
+    }
+
+/*---------------------------------------------------------------------------------------*/
+/*-----------------------------------------CSS START HERE--------------------------------*/
+.casestudy{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    max-height: 45em;
+}
+h1 {
+    text-align: center;
+    margin-top: 20px;
+} 
+p{
+    color: white;
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 5%;
+    font-size: 25px;
+}  
+
+hr {
+    background-color: rgb(180, 137, 44); height: 3px; border: 0;
+}
+
+/*---------------------------------------------------------------------------------------*/
